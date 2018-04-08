@@ -404,6 +404,11 @@
               <FileType>1</FileType>
               <FilePath>.\Sources\UART.c</FilePath>
             </File>
+            <File>
+              <FileName>PWT.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Sources\PWT.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -438,6 +443,11 @@
               <FileName>UART.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\Headers\UART.h</FilePath>
+            </File>
+            <File>
+              <FileName>PWT.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Headers\PWT.h</FilePath>
             </File>
           </Files>
         </Group>

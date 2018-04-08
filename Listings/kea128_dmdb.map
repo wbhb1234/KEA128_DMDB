@@ -88,25 +88,26 @@ Image Symbol Table
 
     RESET                                    0x00000000   Section      192  startup_skeaz1284.o(RESET)
     ../clib/microlib/division.c              0x00000000   Number         0  uidiv.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
     RTE\Device\SKEAZ128xxx4\startup_SKEAZ1284.s 0x00000000   Number         0  startup_skeaz1284.o ABSOLUTE
     RTE\Device\SKEAZ128xxx4\system_SKEAZ1284.c 0x00000000   Number         0  system_skeaz1284.o ABSOLUTE
     RTE\\Device\\SKEAZ128xxx4\\system_SKEAZ1284.c 0x00000000   Number         0  system_skeaz1284.o ABSOLUTE
     Sources\ADC.c                            0x00000000   Number         0  adc.o ABSOLUTE
     Sources\CLK.c                            0x00000000   Number         0  clk.o ABSOLUTE
     Sources\FTM.c                            0x00000000   Number         0  ftm.o ABSOLUTE
+    Sources\PWT.c                            0x00000000   Number         0  pwt.o ABSOLUTE
     Sources\UART.c                           0x00000000   Number         0  uart.o ABSOLUTE
     Sources\\ADC.c                           0x00000000   Number         0  adc.o ABSOLUTE
     Sources\\CLK.c                           0x00000000   Number         0  clk.o ABSOLUTE
@@ -244,35 +245,35 @@ Memory Map of the image
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x00000000   0x000000c0   Data   RO          243    RESET               startup_skeaz1284.o
-    0x000000c0   0x00000000   Code   RO          283  * .ARM.Collect$$$$00000000  mc_p.l(entry.o)
-    0x000000c0   0x00000004   Code   RO          288    .ARM.Collect$$$$00000001  mc_p.l(entry2.o)
-    0x000000c4   0x00000004   Code   RO          291    .ARM.Collect$$$$00000004  mc_p.l(entry5.o)
-    0x000000c8   0x00000000   Code   RO          293    .ARM.Collect$$$$00000008  mc_p.l(entry7b.o)
-    0x000000c8   0x00000000   Code   RO          295    .ARM.Collect$$$$0000000A  mc_p.l(entry8b.o)
-    0x000000c8   0x00000008   Code   RO          296    .ARM.Collect$$$$0000000B  mc_p.l(entry9a.o)
-    0x000000d0   0x00000000   Code   RO          298    .ARM.Collect$$$$0000000D  mc_p.l(entry10a.o)
-    0x000000d0   0x00000000   Code   RO          300    .ARM.Collect$$$$0000000F  mc_p.l(entry11a.o)
-    0x000000d0   0x00000004   Code   RO          289    .ARM.Collect$$$$00002712  mc_p.l(entry2.o)
-    0x000000d4   0x00000028   Code   RO          245    .text               startup_skeaz1284.o
-    0x000000fc   0x00000024   Code   RO          302    .text               mc_p.l(init.o)
+    0x00000000   0x000000c0   Data   RO          246    RESET               startup_skeaz1284.o
+    0x000000c0   0x00000000   Code   RO          286  * .ARM.Collect$$$$00000000  mc_p.l(entry.o)
+    0x000000c0   0x00000004   Code   RO          291    .ARM.Collect$$$$00000001  mc_p.l(entry2.o)
+    0x000000c4   0x00000004   Code   RO          294    .ARM.Collect$$$$00000004  mc_p.l(entry5.o)
+    0x000000c8   0x00000000   Code   RO          296    .ARM.Collect$$$$00000008  mc_p.l(entry7b.o)
+    0x000000c8   0x00000000   Code   RO          298    .ARM.Collect$$$$0000000A  mc_p.l(entry8b.o)
+    0x000000c8   0x00000008   Code   RO          299    .ARM.Collect$$$$0000000B  mc_p.l(entry9a.o)
+    0x000000d0   0x00000000   Code   RO          301    .ARM.Collect$$$$0000000D  mc_p.l(entry10a.o)
+    0x000000d0   0x00000000   Code   RO          303    .ARM.Collect$$$$0000000F  mc_p.l(entry11a.o)
+    0x000000d0   0x00000004   Code   RO          292    .ARM.Collect$$$$00002712  mc_p.l(entry2.o)
+    0x000000d4   0x00000028   Code   RO          248    .text               startup_skeaz1284.o
+    0x000000fc   0x00000024   Code   RO          305    .text               mc_p.l(init.o)
     0x00000120   0x0000003c   Code   RO           60    i.Clk_Init          clk.o
     0x0000015c   0x000000d8   Code   RO           83    i.FTM2_IRQHandler   ftm.o
-    0x00000234   0x00000070   Code   RO          254    i.SystemInit        system_skeaz1284.o
+    0x00000234   0x00000070   Code   RO          257    i.SystemInit        system_skeaz1284.o
     0x000002a4   0x0000001c   Code   RO          196    i.UART2_IRQHandler  uart.o
     0x000002c0   0x0000004c   Code   RO          197    i.UART_Init         uart.o
     0x0000030c   0x0000001c   Code   RO          198    i.Uart_GetChar      uart.o
     0x00000328   0x0000000c   Code   RO          151    i.Uart_Interrupt    main.o
     0x00000334   0x0000001c   Code   RO          199    i.Uart_SendChar     uart.o
     0x00000350   0x0000000c   Code   RO          200    i.Uart_SetCallback  uart.o
-    0x0000035c   0x0000000e   Code   RO          306    i.__scatterload_copy  mc_p.l(handlers.o)
-    0x0000036a   0x00000002   Code   RO          307    i.__scatterload_null  mc_p.l(handlers.o)
-    0x0000036c   0x0000000e   Code   RO          308    i.__scatterload_zeroinit  mc_p.l(handlers.o)
+    0x0000035c   0x0000000e   Code   RO          309    i.__scatterload_copy  mc_p.l(handlers.o)
+    0x0000036a   0x00000002   Code   RO          310    i.__scatterload_null  mc_p.l(handlers.o)
+    0x0000036c   0x0000000e   Code   RO          311    i.__scatterload_zeroinit  mc_p.l(handlers.o)
     0x0000037a   0x00000002   PAD
     0x0000037c   0x00000034   Code   RO          153    i.main              main.o
-    0x000003b0   0x00000020   Data   RO          304    Region$$Table       anon$$obj.o
+    0x000003b0   0x00000020   Data   RO          307    Region$$Table       anon$$obj.o
     0x000003d0   0x00000030   PAD
-    0x00000400   0x00000010   Code   RO          244    .ARM.__at_0x400     startup_skeaz1284.o
+    0x00000400   0x00000010   Code   RO          247    .ARM.__at_0x400     startup_skeaz1284.o
 
 
     Execution Region RW_IRAM1 (Base: 0x1ffff000, Size: 0x00000110, Max: 0x00004000, ABSOLUTE)
@@ -281,7 +282,7 @@ Memory Map of the image
 
     0x1ffff000   0x0000000c   Data   RW           91    .data               ftm.o
     0x1ffff00c   0x00000004   Data   RW          201    .data               uart.o
-    0x1ffff010   0x00000100   Zero   RW          241    STACK               startup_skeaz1284.o
+    0x1ffff010   0x00000100   Zero   RW          244    STACK               startup_skeaz1284.o
 
 
 ==============================================================================
