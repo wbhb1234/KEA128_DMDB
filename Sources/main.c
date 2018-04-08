@@ -86,7 +86,7 @@ int main(void)
 	
 	 
 	for(;;) {	   
-	   	counter++;
+	   	counter--;
 
 	}
 	
